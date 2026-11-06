@@ -13,11 +13,11 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        // 1. Create an array
-        // 2. Make a for loop to iterate the quantity the length says
-        // 3. Calculate the multiples by multiplying the first number with the index.
-        // 4. Store the multiples in the array
-        // 5. Return the array.
+        // 1. Create a new array with the size of length
+        // 2. Make a for loop to iterate the quantity the length says, which is the index of the new array
+        // 3. Calculate the multiples by multiplying the first number with each index
+        // 4. Store the multiples in the array called multiples
+        // 5. Return the array
 
         double[] multiples = new double[length];
 
