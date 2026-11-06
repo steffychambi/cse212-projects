@@ -15,7 +15,7 @@ public static class Arrays
 
         // 1. Create an array
         // 2. Make a for loop to iterate the quantity the length says
-        // 3. Calculate the multiples
+        // 3. Calculate the multiples by multiplying the first number with the index.
         // 4. Store the multiples in the array
         // 5. Return the array.
 
@@ -43,10 +43,10 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        // 1. Make a new list with the given amount counting from the back of the first list
-        // 2. Make a new list with the rest of the first list
-        // 3. Clear the original list
-        // 4. Change the order of the original list with the second plus the first lists created.
+        // 1. Make a first list with the given amount counting from the back of the original list called data
+        // 2. Make a second list with the rest of data starting in index 0
+        // 3. Clear the original list data
+        // 4. Change the order of the original list data adding the first list and then the second list created.
 
         List<int> list1 = data.GetRange(data.Count - amount, amount);
         List<int> list2 = data.GetRange(0, data.Count - amount);
