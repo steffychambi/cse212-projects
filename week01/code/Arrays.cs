@@ -13,7 +13,20 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+        // 1. Create an array
+        // 2. Make a for loop to iterate the quantity the length says
+        // 3. Calculate the multiples
+        // 4. Store the multiples in the array
+        // 5. Return the array.
+
+        double[] multiples = new double[length];
+
+        for (int i = 0; i < length; i++)
+        {
+            multiples[i] = number * (i + 1);
+        }
+
+        return multiples; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +42,19 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+
+        // 1. Make a new list with the given amount counting from the back of the first list
+        // 2. Make a new list with the rest of the first list
+        // 3. Clear the original list
+        // 4. Change the order of the original list with the second plus the first lists created.
+
+        List<int> list1 = data.GetRange(data.Count - amount, amount);
+        List<int> list2 = data.GetRange(0, data.Count - amount);
+
+        data.Clear();
+        data.AddRange(list1);
+        data.AddRange(list2);
+
+
     }
 }
